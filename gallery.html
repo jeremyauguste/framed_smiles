@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Framed Smiles Photography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Framed <span>Smiles</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Our <span>Gallery</span></h1>
+        <p>Browse through our portfolio of cherished moments and beautiful memories we've had the honor of capturing.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Weddings</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+        <button class="filter-btn" data-filter="portrait">Portraits</button>
+        <button class="filter-btn" data-filter="event">Events</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="wedding">
+          <img src="gallery_photos/pexels-jonathanborba-13617315.jpg" alt="Romantic wedding couple moment">
+          <div class="gallery-overlay">
+            <h4>Sarah & Michael's Wedding</h4>
+            <p>An intimate romantic moment</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="gallery_photos/pexels-god-picture-369194295-14469537.jpg" alt="Wedding couple in grand venue">
+          <div class="gallery-overlay">
+            <h4>Fatima & Ahmed's Wedding</h4>
+            <p>Elegant venue celebration</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="family">
+          <img src="gallery_photos/pexels-rdne-7551442.jpg" alt="Family group photo outdoors">
+          <div class="gallery-overlay">
+            <h4>The Rodriguez Family</h4>
+            <p>Team spirit family session</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="gallery_photos/pexels-mary-taylor-6009274.jpg" alt="Urban portrait with jump">
+          <div class="gallery-overlay">
+            <h4>Marcus's Senior Portrait</h4>
+            <p>Urban lifestyle session</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="gallery_photos/pexels-esra-salturk-1165434438-27140162.jpg" alt="Joyful bride with bouquet">
+          <div class="gallery-overlay">
+            <h4>Jessica's Bridal Portrait</h4>
+            <p>Pure wedding day joy</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="event">
+          <img src="gallery_photos/pexels-rdne-7551451.jpg" alt="Award ceremony celebration">
+          <div class="gallery-overlay">
+            <h4>Community Awards Ceremony</h4>
+            <p>Celebrating achievements</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="family">
+          <img src="gallery_photos/pexels-rdne-7551734.jpg" alt="Couple having fun outdoors">
+          <div class="gallery-overlay">
+            <h4>The Martinez Couple</h4>
+            <p>Fun outdoor session</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="gallery_photos/pexels-tirachard-kumtanom-112571-347135.jpg" alt="Woman with arms raised at sunset">
+          <div class="gallery-overlay">
+            <h4>Amanda's Portrait</h4>
+            <p>Golden hour freedom</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="gallery_photos/pexels-esra-salturk-1165434438-27140160.jpg" alt="Bride and groom seated together">
+          <div class="gallery-overlay">
+            <h4>Elena & David's Wedding</h4>
+            <p>Quiet moment together</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="event">
+          <img src="gallery_photos/pexels-rdne-7551385.jpg" alt="Couple at outdoor event">
+          <div class="gallery-overlay">
+            <h4>Company Team Building</h4>
+            <p>Corporate event fun</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="gallery_photos/pexels-ketut-subiyanto-4426396.jpg" alt="Person in park setting">
+          <div class="gallery-overlay">
+            <h4>Wellness Portrait</h4>
+            <p>Natural light session</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="gallery_photos/pexels-dominika-polakova-719696518-18535623.jpg" alt="Wedding rings on hands">
+          <div class="gallery-overlay">
+            <h4>Ring Detail Shot</h4>
+            <p>Forever together</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: var(--beige-medium); text-align: center;">
+      <h2>Want to See More?</h2>
+      <p style="max-width: 600px; margin: 1rem auto 2rem; color: var(--text-medium);">Follow us on social media to see our latest work and behind-the-scenes moments from our sessions.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary">Instagram</a>
+        <a href="#" class="btn btn-secondary">Facebook</a>
+      </div>
+    </section>
+
+    <section style="text-align: center;">
+      <h2>Ready for Your Own Photo Session?</h2>
+      <p style="max-width: 600px; margin: 1rem auto 2rem; color: var(--text-medium);">Let us capture your special moments with the same care and artistry you see in our gallery.</p>
+      <a href="booking.html" class="btn btn-primary">Book Your Session</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Framed Smiles</h4>
+        <p>Capturing life's precious moments with warmth and artistry since 2010.</p>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">TW</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Now</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>123 Photography Lane</p>
+        <p>Orlando, FL 32801</p>
+        <p>Phone: (407) 555-0123</p>
+        <p>Email: hello@framedsmiles.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Studio Hours</h4>
+        <p>Monday - Friday: 9am - 6pm</p>
+        <p>Saturday: 10am - 4pm</p>
+        <p>Sunday: By Appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Framed Smiles Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Gallery filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

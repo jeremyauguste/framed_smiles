@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session | Framed Smiles Photography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Framed <span>Smiles</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Book Your <span>Session</span></h1>
+        <p>Ready to capture your special moments? Choose a package that fits your needs and schedule your appointment today.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <h2>Our Photography Packages</h2>
+          <p>Select the perfect package for your needs. All packages include professional editing and an online gallery.</p>
+        </div>
+
+        <div class="package-cards">
+          <div class="card package-card">
+            <h3>Essential</h3>
+            <p class="price">$199</p>
+            <ul>
+              <li>30-minute session</li>
+              <li>1 location</li>
+              <li>15 edited digital images</li>
+              <li>Online gallery</li>
+              <li>Print release included</li>
+            </ul>
+            <a href="#booking-form" class="btn btn-secondary">Select</a>
+          </div>
+          <div class="card package-card featured">
+            <h3>Signature</h3>
+            <p class="price">$349</p>
+            <ul>
+              <li>1-hour session</li>
+              <li>2 locations</li>
+              <li>35 edited digital images</li>
+              <li>Online gallery</li>
+              <li>Print release included</li>
+              <li>1 outfit change</li>
+            </ul>
+            <a href="#booking-form" class="btn btn-primary">Select</a>
+          </div>
+          <div class="card package-card">
+            <h3>Premium</h3>
+            <p class="price">$549</p>
+            <ul>
+              <li>2-hour session</li>
+              <li>Multiple locations</li>
+              <li>60+ edited digital images</li>
+              <li>Online gallery</li>
+              <li>Print release included</li>
+              <li>Unlimited outfit changes</li>
+              <li>11x14 mounted print</li>
+            </ul>
+            <a href="#booking-form" class="btn btn-secondary">Select</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 2rem; padding: 1.5rem; background-color: var(--beige-medium); border: none;">
+          <h4 style="color: var(--orange-primary); margin-bottom: 0.5rem;">Wedding & Event Packages</h4>
+          <p style="margin: 0; color: var(--text-medium);">Wedding and special event pricing is customized based on your specific needs. Please <a href="contact.html" style="color: var(--orange-primary); text-decoration: underline;">contact us</a> for a personalized quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking-form" style="background-color: var(--beige-medium);">
+      <div class="booking-wrapper">
+        <div class="section-title">
+          <h2>Schedule Your Session</h2>
+          <p>Fill out the form below and we'll get back to you within 24 hours to confirm your appointment.</p>
+        </div>
+
+        <div class="card">
+          <form action="#" method="post">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="session-type">Type of Session *</label>
+              <select id="session-type" name="session-type" required>
+                <option value="">Select a session type</option>
+                <option value="family">Family Portrait</option>
+                <option value="wedding">Wedding/Engagement</option>
+                <option value="newborn">Newborn/Baby</option>
+                <option value="senior">Senior Portrait</option>
+                <option value="headshot">Corporate Headshot</option>
+                <option value="event">Special Event</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="package">Preferred Package</label>
+              <select id="package" name="package">
+                <option value="">Select a package</option>
+                <option value="essential">Essential - $199</option>
+                <option value="signature">Signature - $349 (Most Popular)</option>
+                <option value="premium">Premium - $549</option>
+                <option value="custom">Custom/Wedding (Contact for quote)</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+              <div class="form-group">
+                <label for="preferred-date">Preferred Date *</label>
+                <input type="date" id="preferred-date" name="preferred-date" required>
+              </div>
+              <div class="form-group">
+                <label for="alternate-date">Alternate Date</label>
+                <input type="date" id="alternate-date" name="alternate-date">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="preferred-time">Preferred Time</label>
+              <select id="preferred-time" name="preferred-time">
+                <option value="">Select a time</option>
+                <option value="morning">Morning (9am - 12pm)</option>
+                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                <option value="golden-hour">Golden Hour (4pm - 6pm)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Preferred Location</label>
+              <select id="location" name="location">
+                <option value="">Select a location</option>
+                <option value="studio">Our Studio</option>
+                <option value="outdoor">Outdoor Location</option>
+                <option value="client-home">Your Home</option>
+                <option value="other">Other (specify in message)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="group-size">Number of People in Session</label>
+              <select id="group-size" name="group-size">
+                <option value="">Select group size</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3-4">3-4 people</option>
+                <option value="5-8">5-8 people</option>
+                <option value="9+">9+ people</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Information</label>
+              <textarea id="message" name="message" placeholder="Tell us about your vision for the session, any special requests, or questions you may have..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox" name="newsletter" style="width: auto; margin-top: 0.25rem;">
+                <span>Sign me up for the Framed Smiles newsletter to receive photography tips, special offers, and studio updates.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>What to Expect</h2>
+        <p>Your journey with Framed Smiles</p>
+      </div>
+      <div class="services-grid" style="max-width: 1000px; margin: 0 auto;">
+        <div class="card" style="text-align: center;">
+          <div style="font-size: 2.5rem; color: var(--orange-primary); margin-bottom: 1rem;">1</div>
+          <h3 style="color: var(--orange-primary);">Book & Plan</h3>
+          <p>Submit your booking request. We'll confirm your date and have a consultation to discuss your vision.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="font-size: 2.5rem; color: var(--orange-primary); margin-bottom: 1rem;">2</div>
+          <h3 style="color: var(--orange-primary);">Session Day</h3>
+          <p>Relax and have fun! We'll guide you through poses and capture genuine, beautiful moments.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="font-size: 2.5rem; color: var(--orange-primary); margin-bottom: 1rem;">3</div>
+          <h3 style="color: var(--orange-primary);">Reveal & Enjoy</h3>
+          <p>View your images in your private online gallery within 2 weeks. Download, share, and print!</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: var(--beige-medium);">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="booking-wrapper">
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--orange-primary); margin-bottom: 0.5rem;">How far in advance should I book?</h4>
+          <p style="margin: 0; color: var(--text-medium);">We recommend booking at least 2-3 weeks in advance for portrait sessions and 6-12 months for weddings. However, we do accommodate last-minute requests when possible.</p>
+        </div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--orange-primary); margin-bottom: 0.5rem;">What should we wear?</h4>
+          <p style="margin: 0; color: var(--text-medium);">We'll send you a detailed style guide after booking! Generally, we recommend coordinating colors (not matching), avoiding busy patterns, and choosing timeless outfits you feel confident in.</p>
+        </div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--orange-primary); margin-bottom: 0.5rem;">What if it rains on our outdoor session day?</h4>
+          <p style="margin: 0; color: var(--text-medium);">Don't worry! We monitor the weather closely and will reach out to reschedule if needed. Alternatively, we can move to our studio or a covered location.</p>
+        </div>
+        <div class="card">
+          <h4 style="color: var(--orange-primary); margin-bottom: 0.5rem;">Do you require a deposit?</h4>
+          <p style="margin: 0; color: var(--text-medium);">Yes, a 50% deposit is required to secure your date. The remaining balance is due on the day of your session.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Framed Smiles</h4>
+        <p>Capturing life's precious moments with warmth and artistry since 2010.</p>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">TW</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Now</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>123 Photography Lane</p>
+        <p>Orlando, FL 32801</p>
+        <p>Phone: (407) 555-0123</p>
+        <p>Email: hello@framedsmiles.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Studio Hours</h4>
+        <p>Monday - Friday: 9am - 6pm</p>
+        <p>Saturday: 10am - 4pm</p>
+        <p>Sunday: By Appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Framed Smiles Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
