@@ -263,6 +263,43 @@ section {
   margin-bottom: 0.75rem;
 }
 
+/* Studio Showcase */
+.studio-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.studio-image {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.studio-image:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.studio-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.studio-caption {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: var(--white);
+  margin: 0;
+}
+
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
